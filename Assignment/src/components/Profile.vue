@@ -1,31 +1,27 @@
 <template>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-8 mx-auto mb-4">
       <div class="card">
-        <div class="card-header bg-white text-center">
-          <img src="https://via.placeholder.com/150" class="rounded-circle img-thumbnail mb-2" style="width: 120px;">
-          <h4>Hồ sơ của tôi</h4>
-        </div>
         <div class="card-body">
-          <div class="mb-3">
-            <label class="form-label">Họ và tên</label>
-            <input type="text" class="form-control" value="Nguyễn Văn A">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" value="user@example.com">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Mật khẩu mới</label>
-            <input type="password" class="form-control" placeholder="Để trống nếu không đổi">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Ảnh đại diện</label>
-            <input type="file" class="form-control">
-          </div>
-          <button class="btn btn-primary w-100">Cập nhật thông tin</button>
+          <h5>Đăng bài viết mới</h5>
+          <input type="text" class="form-control mb-2" placeholder="Tiêu đề bài viết">
+          <textarea class="form-control mb-2" rows="3" placeholder="Bạn đang nghĩ gì?"></textarea>
+          <input type="file" class="form-control mb-2">
+          <button class="btn btn-success float-end">Đăng bài</button>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+</style>

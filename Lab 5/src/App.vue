@@ -1,9 +1,9 @@
 <script setup>
-import Bai2 from './components/Bai3.vue';
+import Bai1 from './components/Bai1.vue'
 </script>
 
 <template>
-  <Bai2/>
+  <Bai1 />
 </template>
 
 <style scoped>
