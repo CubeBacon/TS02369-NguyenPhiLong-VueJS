@@ -5,26 +5,23 @@
         <h5 class="mb-0 text-center">Xếp loại học lực</h5>
       </div>
       <div class="card-body">
-        
+
         <div class="mb-3">
           <label for="diemTB" class="form-label">Nhập điểm của bạn:</label>
-          <input 
-            type="number" 
-            id="diemTB" 
-            v-model.number="dtb" 
-            class="form-control" 
+          <input type="number"
+            id="diemTB"
+            v-model.number="dtb"
+            class="form-control"
             placeholder="0 - 10"
             min="0"
             max="10"
-            step="0.1"
-          />
+            step="0.1" />
         </div>
 
         <div v-if="dtb !== null" class="text-center">
           <hr />
           <h4 :class="textClass">{{ xepLoai }}</h4>
         </div>
-
       </div>
     </div>
   </div>
@@ -39,7 +36,7 @@ const dtb = ref(null);
 // Logic xử lý xếp loại dựa trên các điều kiện đã cho
 const xepLoai = computed(() => {
   if (dtb.value === null || dtb.value === "") return "";
-  
+
   const score = dtb.value;
 
   if (score < 5.0) {

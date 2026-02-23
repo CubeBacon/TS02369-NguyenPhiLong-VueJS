@@ -12,6 +12,7 @@
                     <input type="number" max="10" min="0" class="form-control" v-model="student.score" id="score"
                         required />
                 </div>
+                
                 <div class="mb-3">
                     <label for="dob">Ngày sinh:</label>
                     <input type="date" class="form-control" v-model="student.dob" id="dob" required />
