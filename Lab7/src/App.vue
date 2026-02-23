@@ -1,5 +1,5 @@
 <script setup>
-import Bai from './components/Bai3.vue'
+import Bai from './components/Bai4/Bai4.vue';
 </script>
 
 <template>
